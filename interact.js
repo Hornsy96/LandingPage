@@ -1,13 +1,15 @@
-const portlists = document.querySelectorAll('.portlist');
+const links = document.querySelectorAll('.bouncelinks');
 
-portlists.forEach(portlist => {
-    portlist.addEventListener('mouseover', () => {
-        portlist.classList.add('hover');
+bouncelinks.forEach(bounce => {
+    bounce.addEventListener('mouseover', () => {
+        bounce.style.transform = 'translateY(-5px)';
+        bounce.style.transition = 'transform 0.2s ease-out';
     });
 
-portlists.forEach(portlist => {
-    portlist.addEventListener('mouseout', () => {
-        portlist.classList.remove('hover');
+bouncelinks.forEach(bounce => {
+    bounce.addEventListener('mouseout', () => {
+        bounce.style.transform('translateY(0)');
+        bounce.style.transition('transform 0.2s ease-out')
     })
     });
 })
