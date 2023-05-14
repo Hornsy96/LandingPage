@@ -37,6 +37,20 @@ body {
     padding: 16px;
 }
 
+.horns:hover {
+    animation-name: wobble;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes wobble {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+
 ul {
     display: flex;
     list-style-type: none;
