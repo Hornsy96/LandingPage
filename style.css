@@ -126,6 +126,10 @@ p {
     border-color: black;
 }
 
+.portlist.hover {
+    background-color: antiquewhite;
+}
+
 
 
 .portfolio img {
