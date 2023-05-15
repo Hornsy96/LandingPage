@@ -24,16 +24,17 @@ body {
     width: 100%;
     gap: 16px;
     background-color: #003768;
-    border-color: ivory;
+    border-bottom: 3px ivory solid;
     flex-wrap: wrap;   
 }
 
 .horns {
     display: flex;
     justify-content: flex-start;
-    width: 150px;
+    width: 250px;
     height: auto;
     padding: 16px;
+    transition: transform 0.5s ease-out;
 }
 
 .horns:hover {
@@ -62,12 +63,24 @@ ul {
 .content {
     display: flex;
     flex-direction: row;
-    width: 100vw;
     align-items: center;
     justify-content: center;
     text-align: start;
     gap: 16px;
     background-color: #003768; 
+}
+
+.contenttext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5px;
+}
+
+.contenttext
+p {
+    margin-top: 1px;
 }
 
 .content 
@@ -84,13 +97,6 @@ img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain; 
-}
-
-.button {
-    font-size: 18px;
-    padding: 4px;
-    background-color: ivory;
-    border-color: #003768;
 }
 
 .sociallinks {
@@ -156,7 +162,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: auto;
     background-color: #003768;
     width: 100%;
 }
