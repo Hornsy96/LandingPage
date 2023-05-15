@@ -33,6 +33,7 @@ body {
     width: 250px;
     height: auto;
     padding: 8px;
+    border-radius: 50%;
     transition: transform 0.5s ease-out;
 }
 
@@ -88,7 +89,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 5px;
 }
 
