@@ -31,9 +31,9 @@ body {
 .horns {
     display: flex;
     justify-content: flex-start;
-    width: 150px;
+    width: 175px;
     height: auto;
-    padding: 16px;
+    padding: 8px;
     transition: transform 0.5s ease-out;
 }
 
