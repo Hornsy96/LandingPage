@@ -34,6 +34,7 @@ body {
     height: auto;
     padding: 8px;
     border-radius: 50%;
+    box-sizing: border-box;
     transition: transform 0.5s ease-out;
 }
 
@@ -90,7 +91,10 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 600px;
+    text-align: center;
     margin-left: 5px;
+
 }
 
 .contenttext
