@@ -1,3 +1,5 @@
+/* This is to make my links bounce when hovered over*/
+
 const links = document.querySelectorAll('.bouncelinks');
 
 links.forEach(bounce => {
@@ -14,6 +16,7 @@ links.forEach(bounce => {
     });
 })
 
+/* This one makes my logo wobble while the mouse is on it */
 const horns = document.querySelector('.horns');
 
 horns.addEventListener('mouseover', () => {
@@ -22,3 +25,4 @@ horns.addEventListener('mouseover', () => {
 horns.addEventListener('mouseout', () => {
     horns.classList.remove('wobble');
 });
+
