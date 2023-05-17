@@ -108,6 +108,8 @@ function createTable(data, headers) {
   return table;
 }
 
+scrapeData();
+
 // Check if it's the scheduled time (e.g., 6 AM)
 function isScheduledTime() {
   const now = new Date();
