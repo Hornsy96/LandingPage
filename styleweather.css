@@ -1,0 +1,12 @@
+.container {
+    margin-bottom: 20px;
+  }
+  .table-container {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  .table-container th, .table-container td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
