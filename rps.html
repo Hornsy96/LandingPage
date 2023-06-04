@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page with links to javascript projects.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylerps.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Home page with links to javascript projects."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylerps.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin"
+    />
     <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <script src="logicrps.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header">
-        <img class= "horns" src="./images/horns.png" alt="an image of horns">
-        <div class="content">
-            <div class="contenttext">
-                <h1>Welcome to my portfolio!</h1>
-                <p>My name is Jake, I am a self taught developer delving into the world of front-end.</p>
-                <p>Please have a look around and explore my recent projects.</p>
-            </div>
-            <div class="contentimage">
-                <img src="./images/me.jpg" alt="this is me">
-            </div>    
-        </div> 
-        <div class="headerlinks">
-            <ul role="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
+      <img class="horns" src="./images/horns.png" alt="an image of horns" />
+      <div class="content">
+        <div class="contenttext">
+          <h1>Welcome to my portfolio!</h1>
+          <p>
+            My name is Jake, I am a self taught developer delving into the world
+            of front-end.
+          </p>
+          <p>Please have a look around and explore my recent projects.</p>
         </div>
-    </div>
-   
-        
-    <div class="playbuttons">
-        <div>
-            
-            <button id="rock">Rock</button>\
+        <div class="contentimage">
+          <img src="./images/me.jpg" alt="this is me" />
         </div>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-    </div>
-    
-    <div class="footer">
-        <ul>
-            <li>Copyright</li>
-            <li>Jake Horsnell</li>
+      </div>
+      <div class="headerlinks">
+        <ul role="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
+      </div>
     </div>
-</body>
+    <h1 id="RPS">ROCK! PAPER! SCISSORS!</h1>
+    <div class="playscreen">
+      <div id="resultscreen">
+        <h2>Results:</h2>
+      </div>
+
+      <div class="playbuttons">
+        <div class="playimages">
+          <img id="rock" src="images/rock.png" alt="rock" />
+        </div>
+        <div class="playimages">
+          <img id="paper" src="images/paper.png" alt="paper" />
+        </div>
+        <div class="playimages">
+          <img id="scissors" src="images/scissors.png" alt="scissors" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul>
+        <li>Copyright</li>
+        <li>Jake Horsnell</li>
+      </ul>
+    </div>
+  </body>
 </html>
