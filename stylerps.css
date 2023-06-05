@@ -3,13 +3,17 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  height: 100px;
   width: 400px;
   margin: 15px;
   background-color: #003768;
   border: solid 3px ivory;
   border-radius: 10px;
   gap: 15px;
+}
+
+#resultscreen, #score {
+    margin-top: 0;
+    letter-spacing: 0.3em;
 }
 
 .playscreen {
