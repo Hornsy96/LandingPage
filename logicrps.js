@@ -4,6 +4,7 @@ const scissors = document.querySelector("#scissors");
 const display = document.querySelector("#resultscreen");
 const score = document.querySelector("#score");
 const game = document.querySelector("#game");
+const selections = document.querySelector("#selections");
 
 let gameResult = "";
 let playerSelection = "";
@@ -22,6 +23,9 @@ function getComputerChoice() {
     return "scissors";
   }
 }
+function selection() {
+  selections.textContent = (`You chose ${playerSelection}, CPU chose ${computerSelection}!`);
+}
 
 function updateScore() {
   score.textContent = (`${playerScore} - ${computerScore}`);
@@ -31,6 +35,7 @@ function isRock() {
   playerSelection = "rock";
   computerSelection = getComputerChoice();
   displayResult(playGame(playerSelection, computerSelection));
+  selection();
   checkGameResult();
 }
 
@@ -38,6 +43,7 @@ function isPaper() {
   playerSelection = "paper";
   computerSelection = getComputerChoice();
   displayResult(playGame(playerSelection, computerSelection));
+  selection();
   checkGameResult();
 }
 
@@ -45,6 +51,7 @@ function isScissors() {
   playerSelection = "scissors";
   computerSelection = getComputerChoice();
   displayResult(playGame(playerSelection, computerSelection));
+  selection();
   checkGameResult();
 }
 

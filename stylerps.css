@@ -9,6 +9,11 @@
   border: solid 3px ivory;
   border-radius: 10px;
   gap: 15px;
+  text-align: center;
+}
+
+#resultscreen, .gametext {
+  text-align: center;
 }
 
 #resultscreen, #score {
@@ -32,6 +37,7 @@
   height: auto;
   width: 33vh;
   gap: 15px;
+  margin-bottom: 15px;
 }
 
 .playimages {
@@ -39,6 +45,7 @@
   justify-content: center;
   align-items: center;
   flex-basis: content;
+  cursor: pointer;
 }
 
 .playimages img {
