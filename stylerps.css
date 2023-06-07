@@ -12,13 +12,15 @@
   text-align: center;
 }
 
-#resultscreen, .gametext {
+#resultscreen,
+.gametext {
   text-align: center;
 }
 
-#resultscreen, #score {
-    margin-top: 0;
-    letter-spacing: 0.3em;
+#resultscreen,
+#score {
+  margin-top: 0;
+  letter-spacing: 0.3em;
 }
 
 .playscreen {
@@ -36,7 +38,7 @@
   justify-content: center;
   height: auto;
   width: 33vh;
-  gap: 15px;
+  gap: 25px;
   margin-bottom: 15px;
 }
 
@@ -48,16 +50,32 @@
   cursor: pointer;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.playimages:hover {
+  animation: bounce 0.5s ease-in-out;
+}
+
 .playimages img {
   display: flex;
   flex-basis: auto;
   height: 200px;
   width: 200px;
   background-color: ivory;
-  border: solid 10px #003768;
+  border: solid 20px #003768;
   border-radius: 10px;
-  gap: 15px;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 #RPS {

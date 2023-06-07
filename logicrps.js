@@ -23,14 +23,18 @@ function getComputerChoice() {
     return "scissors";
   }
 }
+
+/* This function checks the selections and displays them*/
 function selection() {
-  selections.textContent = (`You chose ${playerSelection}, CPU chose ${computerSelection}!`);
+  selections.textContent = `You chose ${playerSelection}, CPU chose ${computerSelection}!`;
 }
 
+/* This function will keep the score tally updated to view on the page*/
 function updateScore() {
-  score.textContent = (`${playerScore} - ${computerScore}`);
+  score.textContent = `${playerScore} - ${computerScore}`;
 }
 
+/* This set of functions will take the element clicked as the players selection, run the game and then display the results*/
 function isRock() {
   playerSelection = "rock";
   computerSelection = getComputerChoice();
@@ -65,38 +69,39 @@ scissors.addEventListener("click", isScissors);
 function playGame(playerSelection, computerSelection) {
   if (playerSelection === "rock" && computerSelection === "paper") {
     computerScore++;
-    game.textContent = ("You Lose! Paper beats rock.");
+    game.textContent = "You Lose! Paper beats rock.";
     return "You Lose! Paper beats rock.";
   } else if (playerSelection === "rock" && computerSelection === "scissors") {
     playerScore++;
-    game.textContent = ("You Win! Rock beats scissors.");
+    game.textContent = "You Win! Rock beats scissors.";
     return "You Win! Rock beats scissors.";
   } else if (playerSelection === "paper" && computerSelection === "rock") {
     playerScore++;
-    game.textContent = ("You Win! Paper beats rock.");
+    game.textContent = "You Win! Paper beats rock.";
     return "You Win! Paper beats rock.";
   } else if (playerSelection === "paper" && computerSelection === "scissors") {
     computerScore++;
-    game.textContent = ("You Lose! Scissors beats paper.");
+    game.textContent = "You Lose! Scissors beats paper.";
     return "You Lose! Scissors beats paper.";
   } else if (playerSelection === "scissors" && computerSelection === "rock") {
     computerScore++;
-    game.textContent = ("You Lose! Rock beats scissors.");
+    game.textContent = "You Lose! Rock beats scissors.";
     return "You Lose! Rock beats scissors.";
   } else if (playerSelection === "scissors" && computerSelection === "paper") {
     playerScore++;
-    game.textContent = ("You Win! Scissors beats paper.");
+    game.textContent = "You Win! Scissors beats paper.";
     return "You Win! Scissors beats paper.";
   } else {
-    game.textContent = ("It's a tie!");
+    game.textContent = "It's a tie!";
     return "It's a tie!";
   }
 }
 
 function displayResult(result) {
-  updateScore(); 
-  }
+  updateScore();
+}
 
+/* This function checks the score and will result it if a score is 5*/
 function checkGameResult() {
   if (playerScore === 5) {
     gameResult = "You win!";
@@ -104,17 +109,15 @@ function checkGameResult() {
   } else if (computerScore === 5) {
     gameResult = "You lose..";
     alert(gameResult);
-  }  
-  
+  }
+
   resetGame();
-  } 
+}
 
-
-
+/* This function checks the result and resets the game*/
 function resetGame() {
   if (gameResult === "You win!" || gameResult === "You lose..") {
     playerScore = 0;
     computerScore = 0;
   }
 }
-
